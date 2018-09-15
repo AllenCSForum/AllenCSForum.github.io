@@ -8,7 +8,8 @@ if(window.mobilecheck()){
     for(var i = 0; i < document.getElementsByClassName("link").length; i++){
         document.getElementsByClassName("link")[i].style.top = (27 + 14 * i) + "vh"
     }
-    document.getElementById("club-box").style.width = "100vw"
+    document.getElementById("club-box").style.width = "110vw"
+    document.getElementById("club-box").style.backgroundImage = "linear-gradient(to right, #1772c7, #44444400)"
 } else {
     for(var i = 0; i < document.getElementsByClassName("link").length; i++){
         document.getElementsByClassName("link")[i].style.top = (17 + 14 * i) + "vh"

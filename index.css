@@ -1,7 +1,7 @@
 body{
     background-image: linear-gradient(rgba(235, 243, 255, 0.141), rgba(180, 180, 255, 0.741)), url(allen_high_school.jpg);
     background-repeat: no-repeat;
-    background-size: 100vw 100vh, 125vw 100vh;
+    background-size: 100vw 100vh, 125vw 110vh;
     overflow: hidden;
 }
 
