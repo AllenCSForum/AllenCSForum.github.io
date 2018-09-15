@@ -37,9 +37,18 @@ body{
     background-color: #1772c7;
     opacity: .8;
     transition: transform .3s, opacity .3s;
+    animation-name: blur;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
 }
 
 .link:hover{
     opacity: 1;
     transform: translateX(-1vw) scaleX(1.05) scaleY(1.02)
+}
+
+@keyframes blur {
+    from {filter: brightness(100%)}
+    to {filter: brightness(90%);}
 }
