@@ -1,0 +1,45 @@
+body{
+    background-image: linear-gradient(rgba(235, 243, 255, 0.141), rgba(180, 180, 255, 0.741)), url(allen_high_school.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh, cover;
+    overflow: hidden;
+}
+
+#club-box{
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-top: 10vh;
+    padding-left: 3vw;
+    text-align: left;
+    font-size: 130px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke: 2px #BBBBBB;
+    background-image: linear-gradient(to right, #1772c7, #44444400);
+}
+
+.link{
+    position: absolute;
+    width: 27.5vw;
+    padding-right: 1.5vw;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 60px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+    background-color: #1772c7;
+    opacity: .8;
+    transition: transform .3s, opacity .3s;
+}
+
+.link:hover{
+    opacity: 1;
+    transform: translateX(-1vw) scaleX(1.05) scaleY(1.02)
+}
