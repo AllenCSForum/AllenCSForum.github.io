@@ -12,6 +12,6 @@ if(window.mobilecheck()){
     document.getElementById("club-box").style.backgroundImage = "linear-gradient(to right, #1772c7, #44444400)"
 } else {
     for(var i = 0; i < document.getElementsByClassName("link").length; i++){
-        document.getElementsByClassName("link")[i].style.top = (17 + 14 * i) + "vh"
+        document.getElementsByClassName("link")[i].style.top = (27 + 14 * i) + "vh"
     }
 }

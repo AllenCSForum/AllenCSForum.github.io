@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Allen Computer Science</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        body{
+            user-select: none;
+        }
+
+        #club-box{
+            position: absolute;
+            text-align: left;
+            width: 70vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            padding-top: 5vh;
+            padding-left: 21vw;
+            font-size: 6vw;
+            font-weight: bold;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            -webkit-text-stroke: 2px #777777;
+            color: #DDDDDD;
+        }
+
+        .link{
+            position: absolute;
+            width: 27.5vw;
+            padding-right: 1.5vw;
+            height: 10vh;
+            bottom: 10vh; 
+            left: 36.25vw;
+            text-align: center;
+            line-height: 10vh;
+            font-size: 5vw;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            text-decoration: none;
+            background-color: #1772c7;
+            opacity: .8;
+            transition: transform .3s, opacity .3s;
+        }
+
+        .link:hover{
+            opacity: 1;
+            transform: scaleX(1.05) scaleY(1.02)
+        }
+
+        .circle{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: #1772c7;
+            opacity: .7;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            animation: circle 2s infinite alternate-reverse 
+        }
+
+        @keyframes circle {
+            from {transform: rotate(0);}
+            to {transform: rotate(-1080deg);}
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="club-box">PAGE NOT FOUND</div>
+    <a class="link" href="index.html">HOME</a>
+</body>
+<script>
+    document.addEventListener('click', function(e){
+        var newCircle = document.createElement("DIV")
+        newCircle.className = "circle"
+        newCircle.style.left = e.pageX - 50 + "px"
+        newCircle.style.top = e.pageY - 50 + "px"
+        newCircle.innerHTML = "404"
+        document.body.appendChild(newCircle)
+    }, true);
+</script>
+</html>
